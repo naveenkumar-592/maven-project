@@ -2,7 +2,7 @@ pipeline{
     agent any
     
     environment{
-         PATH = "/path/to/dir:${env.PATH}"
+         PATH = "\path\to\dir:${env.PATH}"
     }
     stages{
         stage("Git Checkout"){
