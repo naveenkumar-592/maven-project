@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage("Welcome"){
+        stage("Git Checkout"){
             steps{
                 git credentialsId: '4518c7b5-c3d1-42b9-88d1-bf229b103019', url: 'https://github.com/naveenkumar-592/maven-project.git'
             }
